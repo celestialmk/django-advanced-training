@@ -1,2 +1,2 @@
 # django-advanced-training-project
-This is a simple django project used by the [django-advanced-training](https://django-advanced-training.readthedocs.io).
+The purpose is to build apps for common use cases in web application development
