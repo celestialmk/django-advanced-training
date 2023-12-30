@@ -1,7 +1,8 @@
-from django.conf.urls import url, include
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^todos/', include('basics.urls', namespace='todos')),
+    path('admin/', admin.site.urls),
+    path('todos/', include(('basics.urls'), namespace='todos')),
+    path('csv-downloader/', include('csv_downloader.urls'))
 ]
